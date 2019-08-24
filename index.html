@@ -208,6 +208,23 @@
   cursor: pointer;
 }
 
+.close4 {
+		
+		top: 15px;
+		right: 	50px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+		float: right;
+	}
+	.close4:hover,
+	.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .testimonials {
 	margin-top: 5px;
@@ -562,6 +579,24 @@
 
 
 
+		<div class="col-md-3 col-xs-6 work">
+			<img class="img-responsive" src="dennis.jpeg" alt="" id="myImg4">
+			<div id="myModal4" class="modal">
+					<span class="close4">&times;</span>
+					<div class="row">
+						<div class="col-md-6">
+					<img class="modal-content" id="img05">
+				</div>
+				<div class="col-md-6" class="caption4">
+					<p>Works</p>
+					</div>
+					</div>
+				
+				</div>
+			
+			</div>
+
+
 
 
 
@@ -762,22 +797,26 @@ var modal = document.getElementById("myModal");
 var modal1 = document.getElementById("myModal1");
 var modal2 = document.getElementById("myModal2");
 var modal3 = document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var img1 = document.getElementById("myImg1");
 var img2 = document.getElementById("myImg2");
 var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
 
 var modalImg = document.getElementById("img01");
 var modalImg1 = document.getElementById("img02");
 var modalImg2 = document.getElementById("img03");
 var modalImg3 = document.getElementById("img04");
+var modalImg4 = document.getElementById("img05");
 
 var captionText = document.getElementById("caption");
 var captionText1 = document.getElementById("caption1");
 var captionText2 = document.getElementById("caption2");
 var captionText3 = document.getElementById("caption3");
+var captionText4 = document.getElementById("caption4");
 
 img.onclick = function(){
   modal.style.display = "block";
@@ -799,6 +838,11 @@ img3.onclick = function(){
   modalImg3.src = this.src;
   captionText3.innerHTML = this.alt;
 }
+img4.onclick = function(){
+  modal4.style.display = "block";
+  modalImg4.src = this.src;
+  captionText4.innerHTML = this.alt;
+}
 
 
 // Get the <span> element that closes the modal
@@ -806,6 +850,7 @@ var span = document.getElementsByClassName("close")[0];
 var span1 = document.getElementsByClassName("close1")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
@@ -819,6 +864,10 @@ span2.onclick = function() {
 }
 span3.onclick = function() { 
   modal3.style.display = "none";
+}
+
+span4.onclick = function() { 
+  modal4.style.display = "none";
 }
 	</script>
 <script type="text/javascript" src="./jquery.min.js"></script>
