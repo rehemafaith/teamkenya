@@ -224,6 +224,38 @@
   text-decoration: none;
   cursor: pointer;
 }
+.close5 {
+		
+		top: 15px;
+		right: 	50px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+		float: right;
+	}
+	.close5:hover,
+	.close5:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close6 {
+		
+		top: 15px;
+		right: 	50px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+		float: right;
+	}
+	.close6:hover,
+	.close6:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 .testimonials {
@@ -597,7 +629,39 @@
 			</div>
 
 
+			<div class="col-md-3 col-xs-6 work">
+				<img class="img-responsive" src="dennis.jpeg" alt="" id="myImg5">
+				<div id="myModal5" class="modal">
+						<span class="close5">&times;</span>
+						<div class="row">
+							<div class="col-md-6">
+						<img class="modal-content" id="img06">
+					</div>
+					<div class="col-md-6" class="caption5">
+						<p>Works again</p>
+						</div>
+						</div>
+					
+					</div>
+				
+				</div>
 
+				<div class="col-md-3 col-xs-6 work">
+					<img class="img-responsive" src="dennis.jpeg" alt="" id="myImg6">
+					<div id="myModal6" class="modal">
+							<span class="close6">&times;</span>
+							<div class="row">
+								<div class="col-md-6">
+							<img class="modal-content" id="img07">
+						</div>
+						<div class="col-md-6" class="caption6">
+							<p>Works again</p>
+							</div>
+							</div>
+						
+						</div>
+					
+					</div>
 
 
 
@@ -626,7 +690,7 @@
 
 <h1 style="color: #fff; text-align:center;">Help us raise funds</h1>
 <p style="color: #fff; text-align:center;">This year Team Kenya needs to raise $10000 in order to efficiently build Wema the Robot and represent Kenya in Dubai. Your support in terms of monetary donation is highly appreciated. Thank you</p>
-<button class="button">Donate</button>
+<a href="https://secure.changa.co.ke/myweb/share/34709"><button class="button">Donate</button></a> 
 
 </div>
 
@@ -798,6 +862,8 @@ var modal1 = document.getElementById("myModal1");
 var modal2 = document.getElementById("myModal2");
 var modal3 = document.getElementById("myModal3");
 var modal4 = document.getElementById("myModal4");
+var modal5 = document.getElementById("myModal5");
+var modal6 = document.getElementById("myModal6");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
@@ -805,18 +871,24 @@ var img1 = document.getElementById("myImg1");
 var img2 = document.getElementById("myImg2");
 var img3 = document.getElementById("myImg3");
 var img4 = document.getElementById("myImg4");
+var img5 = document.getElementById("myImg5");
+var img6 = document.getElementById("myImg6");
 
 var modalImg = document.getElementById("img01");
 var modalImg1 = document.getElementById("img02");
 var modalImg2 = document.getElementById("img03");
 var modalImg3 = document.getElementById("img04");
 var modalImg4 = document.getElementById("img05");
+var modalImg5 = document.getElementById("img06");
+var modalImg6 = document.getElementById("img07");
 
 var captionText = document.getElementById("caption");
 var captionText1 = document.getElementById("caption1");
 var captionText2 = document.getElementById("caption2");
 var captionText3 = document.getElementById("caption3");
 var captionText4 = document.getElementById("caption4");
+var captionText5 = document.getElementById("caption5");
+var captionText6 = document.getElementById("caption6");
 
 img.onclick = function(){
   modal.style.display = "block";
@@ -843,6 +915,16 @@ img4.onclick = function(){
   modalImg4.src = this.src;
   captionText4.innerHTML = this.alt;
 }
+img5.onclick = function(){
+  modal5.style.display = "block";
+  modalImg5.src = this.src;
+  captionText5.innerHTML = this.alt;
+}
+img6.onclick = function(){
+  modal6.style.display = "block";
+  modalImg6.src = this.src;
+  captionText6.innerHTML = this.alt;
+}
 
 
 // Get the <span> element that closes the modal
@@ -851,6 +933,8 @@ var span1 = document.getElementsByClassName("close1")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span3 = document.getElementsByClassName("close3")[0];
 var span4 = document.getElementsByClassName("close4")[0];
+var span5 = document.getElementsByClassName("close5")[0];
+var span6 = document.getElementsByClassName("close6")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
@@ -868,6 +952,12 @@ span3.onclick = function() {
 
 span4.onclick = function() { 
   modal4.style.display = "none";
+}
+span5.onclick = function() { 
+  modal5.style.display = "none";
+}
+span6.onclick = function() { 
+  modal6.style.display = "none";
 }
 	</script>
 <script type="text/javascript" src="./jquery.min.js"></script>
